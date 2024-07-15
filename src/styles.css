@@ -1,0 +1,32 @@
+.App {
+  text-align: center;
+}
+
+.welcome, .game-board, .success-screen {
+  margin: 20px;
+}
+
+.tiles {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 10px;
+}
+
+.tile {
+  width: 100px;
+  height: 100px;
+  background: #ddd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.tile.flipped {
+  background: #fff;
+}
+
+.tile img {
+  max-width: 100%;
+  max-height: 100%;
+}
